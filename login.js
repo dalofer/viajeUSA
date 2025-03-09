@@ -16,8 +16,8 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
 
     if (response.ok) {
         alert("Login exitoso!");
-        localStorage.setItem("token", data.access_token); // Guardar el token en el navegador
-        window.location.href = "pages/viajeusa.html"; // Redirigir a otra página
+        localStorage.setItem("token", data.access_token); // Guardar el token
+        window.location.href = "pages/viajeusa.html"; // Redirigir a la página protegida
     } else {
         alert("Error: " + data.detail);
     }
